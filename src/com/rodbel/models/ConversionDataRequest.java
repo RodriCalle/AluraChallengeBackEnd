@@ -1,11 +1,14 @@
 package com.rodbel.models;
 
-public class ConversionData {
+public class ConversionDataRequest {
     private String currencyFrom;
     private String currencyTo;
     private double amount;
 
-    public ConversionData(String currencyFrom, String currencyTo, double amount) {
+    public ConversionDataRequest(String currencyFrom, String currencyTo, double amount) {
+        this.currencyFrom = currencyFrom;
+        this.currencyTo = currencyTo;
+        this.amount = amount;
     }
 
     public String getCurrencyFrom() {
